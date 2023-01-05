@@ -468,7 +468,7 @@
 .home,
 .music-art-friendship-some {
   line-height: 100.5%;
-  display: inline-block;
+  display: block;
 }
 .b {
   position: absolute;
@@ -491,7 +491,7 @@
   top: 58px;
   left: 95px;
   height: 37px;
-  overflow: hidden;
+  overflow: none;
   display: flex;
   flex-direction: row;
   padding: 0 var(--padding-md);
@@ -1017,4 +1017,34 @@
   font-size: var(--font-size-xs);
   color: var(--color-turquoise);
   font-family: var(--font-overlock-sc);
+}
+a.navLink{
+ text-decoration: none; 
+ color: inherit;
+}
+#mobile-menu-btn {
+  display: none;
+}
+.mobile-menu {
+  color: white;
+  display: none;
+  position: absolute;
+  right: 0;
+  height: 60vh;
+  width: 70vw;
+  background-color: blue;
+} 
+@media (max-width: 600px) {
+  #mobile-menu-btn {
+    display: block;
+  }
+  nav p {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 }

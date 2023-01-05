@@ -1,7 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Button } from "react-bootstrap";
 import "./Homepage.css";
-import datepicker from '../components/Seceduling'
 const Homepage = () => {
   return (
     <div className="homepage">
@@ -112,22 +111,24 @@ const Homepage = () => {
           </span>
         </p>
       </div>
+      <nav>
       <b className="b">{`&`}</b>
       <div className="frame-div">
-        <b className="home">HOME</b>
+        <b className="home"><a className="navLink" href="/Contact">HOME</a></b>
       </div>
       <div className="frame-div1">
-        <b className="home">ABOUT</b>
+        <b className="home"><a className="navLink" href="/Contact">ABOUT</a></b>
       </div>
       <div className="frame-div2">
-        <b className="home">PROJECTS</b>
+        <b className="home"><a className="navLink" href="/Contact">PROJECTS</a></b>
       </div>
       <div className="frame-div3">
-        <b className="home">CERTIFICATIONS</b>
+        <b className="home"><a className="navLink" href="/Contact">CERTIFICATIONS</a></b>
       </div>
       <div className="frame-div4">
-        <b className="home">CONTACT</b>
-      </div>
+        <b className="home"><a className="navLink" href="/Contact">CONTACT</a></b>    
+      </div>  
+      </nav>   
       <img className="img-black-1" alt="" src="../img-black-1@2x.png" />
       <div className="line-div" />
       <div className="rectangle-div4" />

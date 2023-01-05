@@ -36,4 +36,4 @@ function getPrices(d, callback) {
       callback({ labels: labels, invalid: invalid });
   }, 'jsonp');
 }
-export default Seceduling-calander;
+export default Seceduling;
